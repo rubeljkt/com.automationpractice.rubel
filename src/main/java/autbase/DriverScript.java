@@ -12,6 +12,7 @@ public class DriverScript {
 
 	public DriverScript()
 	{
+		// Please explain about try and catch as soon as possible?????????
 		try
 		{
 			File src = new File("./autconfig/config.properties");
@@ -24,6 +25,7 @@ public class DriverScript {
 			System.out.println("Unable to load the file "+e.getMessage());
 		}
 	}
+	//what is init Application please provide the feedback?????????
 	public void initApplication()
 	{
 		String browser = prop.getProperty("browser");
@@ -32,6 +34,7 @@ public class DriverScript {
 			System.setProperty("webdriver.chrome.driver", "./autbrowsers/chromedriver.exe");
 			driver=new ChromeDriver();
 		}
+		//what is the name of firefox driver and how to download please reply asap??????????
 		else if(browser.equalsIgnoreCase("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", "./autbrowsers/geckodriver.exe");
