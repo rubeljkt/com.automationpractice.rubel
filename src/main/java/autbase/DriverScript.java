@@ -49,6 +49,7 @@ public class DriverScript {
 	}
 	public void CloseApplication()
 	{
+		//This will close the application.
 		driver.close();
 	}
 }
