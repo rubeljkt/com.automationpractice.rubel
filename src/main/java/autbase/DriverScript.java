@@ -37,6 +37,7 @@ public class DriverScript {
 			System.setProperty("webdriver.gecko.driver", "./autbrowsers/geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
+		//This is for unauthorized browser name
 		else
 		{
 			System.out.println("Browser name is not specified. Please provide correct browser name");
@@ -50,6 +51,7 @@ public class DriverScript {
 	public void CloseApplication()
 	{
 		//This will close the application.
+		//this is the second option
 		driver.close();
 	}
 }
