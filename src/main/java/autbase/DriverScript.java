@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 public class DriverScript {
 	public static WebDriver driver;
 	Properties prop;
@@ -25,7 +26,6 @@ public class DriverScript {
 			System.out.println("Unable to load the file "+e.getMessage());
 		}
 	}
-	//what is init Application please provide the feedback?????????
 	public void initApplication()
 	{
 		String browser = prop.getProperty("browser");
